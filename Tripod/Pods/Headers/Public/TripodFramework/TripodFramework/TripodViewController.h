@@ -1,0 +1,1 @@
+../../../../../../TripodFramework/TripodFramework.framework/Headers/TripodViewController.h

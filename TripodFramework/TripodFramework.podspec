@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint TripodFramee.podspec' to ensure this is a
+#  Be sure to run `pod spec lint TripodFramework.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "TripodFramee"
+  s.name         = "TripodFramework"
   s.version      = "0.0.1"
   s.summary      = "Use for testing application in very easy way to send crashes and images."
 
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "For generating crashes and ui issues directly from this framework"
 
-  s.homepage     = "https://demo01.gendevs.com"
+  s.homepage     = "https://demo.gendevs.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TripodFramee", "TripodFrame//*.{}"
+  s.source_files  = "TripodFramework","TripodFramework//*.{}"
 
     s.resources =  "TripodFrame/Resources/**/*.{png}"
   s.exclude_files = "Classes/Exclude"
@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-    s.vendored_frameworks = 'TripodFrame.framework'
+    s.vendored_frameworks = 'TripodFramework.framework'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

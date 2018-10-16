@@ -1,1 +1,0 @@
-../../../../../../TripodFramee/TripodFrame.framework/Headers/TripodFrame.h

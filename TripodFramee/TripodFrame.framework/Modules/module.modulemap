@@ -1,6 +1,0 @@
-framework module TripodFrame {
-  umbrella header "TripodFrame.h"
-
-  export *
-  module * { export * }
-}

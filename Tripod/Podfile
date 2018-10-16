@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 target 'Tripod' do
-    pod 'TripodFramee', :path => '../TripodFramee'
+     pod 'TripodFramework', :path => '../TripodFramework'
 
 
 end

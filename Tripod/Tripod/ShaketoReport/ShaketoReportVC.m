@@ -108,7 +108,7 @@
     {
         imgData = UIImagePNGRepresentation(image);
         [imgData writeToFile:Imagename atomically:YES];
-        tripodView = [[TripodViewController alloc]initWithNibName:@"TripodViewController" bundle:[NSBundle bundleWithIdentifier:@"com.gendevs.TripodFrame"]];
+        tripodView = [[TripodViewController alloc]initWithNibName:@"TripodViewController" bundle:[NSBundle bundleWithIdentifier:@"com.gendevs.TripodFramework"]];
         
         if(![tripodView.view isDescendantOfView:self.view]) {
             [self.view addSubview:tripodView.view];

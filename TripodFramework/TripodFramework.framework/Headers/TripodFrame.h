@@ -16,6 +16,6 @@ FOUNDATION_EXPORT const unsigned char TripodFrameVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TripodFrame/PublicHeader.h>
 
-#import<TripodFrame/TripodViewController.h>
+#import<TripodFramework/TripodViewController.h>
 
 
