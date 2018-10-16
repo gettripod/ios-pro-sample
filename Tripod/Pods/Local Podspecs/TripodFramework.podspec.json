@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "summary": "Use for testing application in very easy way to send crashes and images.",
   "description": "For generating crashes and ui issues directly from this framework",
-  "homepage": "https://demo.gendevs.com",
+  "homepage": "https://demo.gendevs.com/tripod-frontend-web-develop/#/apps/home",
   "license": "MIT",
   "authors": {
-    "Mohan": "mohanab@gendevs.com"
+    "General Developers": "generaldevelopers@gmail.com"
   },
   "source": {
-    "git": "https://github.com/mohanchandrab/TripodFrame.git",
+    "git": "",
     "tag": "0.0.1"
   },
   "source_files": [

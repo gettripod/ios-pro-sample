@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../TripodFramework"
 
 SPEC CHECKSUMS:
-  TripodFramework: 14144dc9c5f5a36ea366a4626d62b6f653ac9fac
+  TripodFramework: 68070f3160e5dedae229f943b5d2c2ef2a2c7e75
 
 PODFILE CHECKSUM: 6de26ec8b32d857bf736919d89e93fc9914b2b98
 
