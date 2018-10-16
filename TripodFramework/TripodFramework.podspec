@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "General Developers" => "generaldevelopers@gmail.com" }
-  # Or just: s.author    = "Mohan"
+  # Or just: s.author    = "General Developers"
   # s.authors            = { "General Developers" => "generaldevelopers@gmail.com" }
   # s.social_media_url   = ""
 
