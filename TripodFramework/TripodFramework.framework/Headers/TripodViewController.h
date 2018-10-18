@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-
+#ifdef DEBUG
+static NSMutableString *URL = @"https://demo.gendevs.com/tripod-backend-develop/rest/";//Test API
+#else
+static NSMutableString *URL = @"https://demo.gendevs.com/tripod-backend-develop/rest/";//Live API
+#endif
 @interface TripodViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *editImageView;
 @property(nonatomic,strong)NSString *editfilename;
@@ -23,8 +27,8 @@
 @property (nonatomic, retain) IBOutlet UIButton* penButton;
 @property BOOL isPickerSeleted;
 
--(void)createCrash:(NSException *)exception environmentKey :(NSString *)key appVersion:(NSString *)version appVersionCode :(NSString *)code packageName :(NSString *)packageName appName:(NSString *)appName;
+-(void)createCrash:(NSException *)exception ;
 -(void)sendEditedImageToServer:(NSData *)imgeData;
 - (IBAction)ShowPicker:(id)sender;
--(void)imageCrashEnvironmentKey :(NSString *)key appVersion:(NSString *)version appVersionCode :(NSString *)code packageName :(NSString *)packageName appName:(NSString *)appName;
+-(void)setupTripodenvironmentKey :(NSString *)key appVersion:(NSString *)version appVersionCode :(NSString *)code packageName :(NSString *)packageName appName:(NSString *)appName secretKey:(NSString *)secretKey;
 @end

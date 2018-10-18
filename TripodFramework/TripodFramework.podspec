@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "For generating crashes and ui issues directly from this framework"
 
-  s.homepage     = "https://demo.gendevs.com/tripod-frontend-web-develop/#/apps/home"
+  s.homepage     = "https://demo.gendevs.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -51,10 +51,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "General Developers" => "generaldevelopers@gmail.com" }
-  # Or just: s.author    = "General Developers"
-  # s.authors            = { "General Developers" => "generaldevelopers@gmail.com" }
-  # s.social_media_url   = ""
+  s.author             = { "Mohan" => "mohanab@gendevs.com" }
+  # Or just: s.author    = "Mohan"
+  # s.authors            = { "Mohan" => "mohanab@gendevs.com" }
+  # s.social_media_url   = "http://twitter.com/Mohan"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-   s.source       = { :git => "", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/mohanchandrab/TripodFrame.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "TripodFramework","TripodFramework//*.{}"
 
-    
+    s.resources =  "TripodFrame/Resources/**/*.{png}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

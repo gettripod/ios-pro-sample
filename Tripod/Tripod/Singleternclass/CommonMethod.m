@@ -36,23 +36,7 @@
     [tripodImagebtn addSubview:label];
     UIBarButtonItem *tripodNavbarButton = [[UIBarButtonItem alloc] initWithCustomView:tripodImagebtn];
     navigation.leftBarButtonItem=tripodNavbarButton;
-    
-
-//    
-//    navigation.leftBarButtonItems = [[NSArray alloc]initWithObjects:barButtonItem,barButton, nil];
-
 }
-
-//    UIImage* image3 = [UIImage imageNamed:@"navigationbarimage"];
-//    CGRect frameimg = CGRectMake(0, 0, image3.size.width, image3.size.height);
-//    UIButton *tripodImagebtn = [[UIButton alloc] initWithFrame:frameimg];
-//    [tripodImagebtn setBackgroundImage:image3 forState:UIControlStateNormal];
-//
-//    [tripodImagebtn setShowsTouchWhenHighlighted:YES];
-//
-//    UIBarButtonItem *tripodbarbutton =[[UIBarButtonItem alloc] initWithCustomView:tripodImagebtn];
-//    navigation.leftBarButtonItem=tripodbarbutton;
-
 
 
 

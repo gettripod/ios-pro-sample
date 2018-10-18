@@ -7,39 +7,37 @@
 //
 
 #import "AppDelegate.h"
-#import "WebServiceRequest.h"
 @interface NSURLRequest (InvalidSSLCertificate)
 + (BOOL)allowsAnyHTTPSCertificateForHost:(NSString*)host;
 + (void)setAllowsAnyHTTPSCertificate:(BOOL)allow forHost:(NSString*)host;
+
 @end
 #define TimeStamp [NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970] * 1000]
-NSString const *key = @"a97dcb305adc768";
+static NSString *environmentKey = @"a97dcb305adc768";
+static NSString *secretKey = @"Rpz1UkWKZvzWlnEqT8K11i0OEbIwknzoJTDn6oUQAIhdYZhtqTW4AaWk4l4dgX9H ";
+
 @interface AppDelegate ()
 
 @end
 
 
-@implementation AppDelegate 
-{
-    //SRScreenRecorder *screenRecorder;
-}
-
+@implementation AppDelegate
 @synthesize s;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     application.applicationSupportsShakeToEdit = YES;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showActionSheet) name:@"shake" object:nil];
     [self.window addSubview:self.s.view];
     [_window makeKeyAndVisible];
-   
-    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
-   
+    self.tripod = [[TripodViewController alloc]init];
+    [self.tripod setupTripodenvironmentKey:environmentKey appVersion:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"] appVersionCode:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] packageName:[[NSBundle mainBundle] bundleIdentifier] appName:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"] secretKey:secretKey];
+    //if ([responcestr isEqualToString:@"Allowed to create!"])
+    //{
+        NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
+    //}
     
     
     return YES;
-    
-    
-    // Override point for customization after application launch.
     
 }
 
@@ -48,18 +46,20 @@ NSString const *key = @"a97dcb305adc768";
     NSLog(@"hello");
 }
 
-static void uncaughtExceptionHandler(NSException *exception) {
+ void uncaughtExceptionHandler(NSException *exception) {
 
+     [((AppDelegate *)[[UIApplication sharedApplication] delegate])sendingCrashmessage:exception];
 
-    TripodViewController *tripodFrame = [TripodViewController new];
-    NSLog(@"build %@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]);
-    [tripodFrame createCrash:exception environmentKey:key appVersion:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"] appVersionCode:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] packageName:[[NSBundle mainBundle] bundleIdentifier] appName:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]];
-    
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     [self becomeFirstResponder];
+
     
+}
+-(void)sendingCrashmessage :(NSException *)exception
+{
+    [self.tripod createCrash:exception];
 }
 
 
@@ -97,7 +97,6 @@ static void uncaughtExceptionHandler(NSException *exception) {
 - (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
     return YES;
 }
-
 
 
 @end

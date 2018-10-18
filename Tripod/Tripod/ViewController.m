@@ -25,35 +25,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self getFreeDiskspace];
-    
-    
-    
-    
-    //NSLog(@"vale %lu",(unsigned long)sum);
-    //getCPUType();
-    //NSLog(@"cpu tyope%@",getCPUType());
-    
-    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    NSString *version1 = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-ddTHH:mm:ss.zzzz"];
-    
-//    NSDate *theDate = [formatter dateFromString:dateString];
-//    NSLog(@"The Date: %@", theDate);
-    UIDevice *myDevice = [UIDevice currentDevice];
-    
-    
-    NSLog(@"name %@ %@", myDevice.systemName,myDevice.model);
-    //[captureView performSelector:@selector(startRecording) withObject:nil afterDelay:1.0];
-    //[captureView performSelector:@selector(stopRecording) withObject:nil afterDelay:31.0];
-    // Do any additional setup after loading the view, typically from a nib.
+
 }
-
-
-
-
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self becomeFirstResponder];
@@ -91,17 +67,6 @@
                                              selector:@selector(shakeNotification)
                                                  name:@"shake"
                                                object:nil];
-    //if(event.type == UIEventTypeMotion && event.subtype== UIEventSubtypeMotionShake)
-    //[self shakeNotification:@"UIEventSubtypeMotionShakeEnded"];
-    //[self showActionSheet];
-    
-    
-}
--(IBAction)stopRecording:(id)sender
-{
-    //src= [SRScreenRecorder new];
-    //[src stopRecording];
-    
     
 }
 
@@ -139,26 +104,6 @@
         }
     }
 }
--(uint64_t)getFreeDiskspace {
-    uint64_t totalSpace = 0;
-    uint64_t totalFreeSpace = 0;
-    NSError *error = nil;
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfFileSystemForPath:[paths lastObject] error: &error];
-    
-    if (dictionary) {
-        NSNumber *fileSystemSizeInBytes = [dictionary objectForKey: NSFileSystemSize];
-        NSNumber *freeFileSystemSizeInBytes = [dictionary objectForKey:NSFileSystemFreeSize];
-        totalSpace = [fileSystemSizeInBytes unsignedLongLongValue];
-        totalFreeSpace = [freeFileSystemSizeInBytes unsignedLongLongValue];
-       NSString* totalInternalMemory  =  [NSString stringWithFormat:@"value is: %lld",totalFreeSpace];
-        NSLog(@"tota %@",totalInternalMemory);
-        NSLog(@"Memory Capacity of %llu MiB with %llu MiB Free memory available.", ((totalSpace/1024ll)/1024ll), ((totalFreeSpace/1024ll)/1024ll));
-    } else {
-        NSLog(@"Error Obtaining System Memory Info: Domain = %@, Code = %ld", [error domain], (long)[error code]);
-    }
-    
-    return totalFreeSpace;
-}
+
 
 @end

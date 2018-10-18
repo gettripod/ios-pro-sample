@@ -17,7 +17,7 @@
 		01254EA820E4E057003E0E4B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01254EA720E4E057003E0E4B /* CoreMedia.framework */; };
 		01254EAA20E4E093003E0E4B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01254EA920E4E093003E0E4B /* CoreGraphics.framework */; };
 		0146BBC320F8819100E27959 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0146BBC220F8819000E27959 /* CoreMotion.framework */; };
-		016317742143A84C00204521 /* NSURLRequest+IgnoreSSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 016317722143A84B00204521 /* NSURLRequest+IgnoreSSL.m */; };
+		0163176C2143427D00204521 /* libTripodFrame.a in Sources */ = {isa = PBXBuildFile; fileRef = 0163176A2143362A00204521 /* libTripodFrame.a */; };
 		01822F3E1C88089000C90D48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01822F3D1C88089000C90D48 /* main.m */; };
 		01822F411C88089000C90D48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01822F401C88089000C90D48 /* AppDelegate.m */; };
 		01822F441C88089000C90D48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01822F431C88089000C90D48 /* ViewController.m */; };
@@ -26,7 +26,6 @@
 		01822F571C88089000C90D48 /* TripodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01822F561C88089000C90D48 /* TripodTests.m */; };
 		01822F621C88089000C90D48 /* TripodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01822F611C88089000C90D48 /* TripodUITests.m */; };
 		0185D54F1C8928D600616B4A /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0185D54E1C8928D600616B4A /* CommonMethod.m */; };
-		0185D5521C895A0000616B4A /* EditImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0185D5511C895A0000616B4A /* EditImageVC.m */; };
 		01C545731C90457300673CC9 /* backbuttonimage-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C545571C90457300673CC9 /* backbuttonimage-1.png */; };
 		01C545741C90457300673CC9 /* backbuttonimage-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C545581C90457300673CC9 /* backbuttonimage-2.png */; };
 		01C545751C90457300673CC9 /* backbuttonimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C545591C90457300673CC9 /* backbuttonimage.png */; };
@@ -52,8 +51,7 @@
 		01C545891C90457300673CC9 /* navigationbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C545721C90457300673CC9 /* navigationbar.png */; };
 		01DF03211C88410A00A9FA55 /* CrashRepotingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DF031F1C88401F00A9FA55 /* CrashRepotingVC.m */; };
 		01DF03241C88430000A9FA55 /* ShaketoReportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DF03231C88430000A9FA55 /* ShaketoReportVC.m */; };
-		01DF03281C88672E00A9FA55 /* WebServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DF03271C88672E00A9FA55 /* WebServiceRequest.m */; };
-		86C8D8D2C1C0568F07314540 /* libPods-Tripod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CA4AB35B9A1AD9FB3CF4C8 /* libPods-Tripod.a */; };
+		B24F7A5C36843D8D3504C937 /* libPods-Tripod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC06DEDE83AC614F4028FB0 /* libPods-Tripod.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,8 +94,12 @@
 		01254EA720E4E057003E0E4B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		01254EA920E4E093003E0E4B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0146BBC220F8819000E27959 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		016317722143A84B00204521 /* NSURLRequest+IgnoreSSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+IgnoreSSL.m"; sourceTree = "<group>"; };
-		016317732143A84B00204521 /* NSURLRequest+IgnoreSSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+IgnoreSSL.h"; sourceTree = "<group>"; };
+		014FBFD8214304A8006AB876 /* libTripodFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTripodFrame.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		014FBFDF2143291A006AB876 /* libTripodFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTripodFrame.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		01631766214334E000204521 /* libTripodFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTripodFrame.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0163176A2143362A00204521 /* libTripodFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTripodFrame.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0163176D2143431F00204521 /* libPods-TripodTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-TripodTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0163176F2143431F00204521 /* libPods-TripodUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-TripodUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01822F391C88089000C90D48 /* Tripod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01822F3D1C88089000C90D48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01822F3F1C88089000C90D48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,8 +118,6 @@
 		01822F631C88089000C90D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0185D54D1C8928D600616B4A /* CommonMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethod.h; sourceTree = "<group>"; };
 		0185D54E1C8928D600616B4A /* CommonMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
-		0185D5501C895A0000616B4A /* EditImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditImageVC.h; sourceTree = "<group>"; };
-		0185D5511C895A0000616B4A /* EditImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditImageVC.m; sourceTree = "<group>"; };
 		01C545571C90457300673CC9 /* backbuttonimage-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbuttonimage-1.png"; sourceTree = "<group>"; };
 		01C545581C90457300673CC9 /* backbuttonimage-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbuttonimage-2.png"; sourceTree = "<group>"; };
 		01C545591C90457300673CC9 /* backbuttonimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbuttonimage.png; sourceTree = "<group>"; };
@@ -145,13 +145,11 @@
 		01DF031F1C88401F00A9FA55 /* CrashRepotingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashRepotingVC.m; sourceTree = "<group>"; };
 		01DF03221C88430000A9FA55 /* ShaketoReportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaketoReportVC.h; sourceTree = "<group>"; };
 		01DF03231C88430000A9FA55 /* ShaketoReportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaketoReportVC.m; sourceTree = "<group>"; };
-		01DF03261C88672E00A9FA55 /* WebServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceRequest.h; sourceTree = "<group>"; };
-		01DF03271C88672E00A9FA55 /* WebServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceRequest.m; sourceTree = "<group>"; };
-		2C757166DCF6CE5496526F74 /* Pods-Tripod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripod.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tripod/Pods-Tripod.release.xcconfig"; sourceTree = "<group>"; };
-		60D0A8F51F1A69ED55E13002 /* libPods-TripodUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TripodUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2268E5B664974BD1D9FDE32 /* libPods-TripodTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TripodTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1CA4AB35B9A1AD9FB3CF4C8 /* libPods-Tripod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tripod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E584BE3D957D29D6C7AEB363 /* Pods-Tripod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tripod/Pods-Tripod.debug.xcconfig"; sourceTree = "<group>"; };
+		510C5F270ADB7397C9FE96EC /* libPods-TripodUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TripodUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC06DEDE83AC614F4028FB0 /* libPods-Tripod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tripod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91A38ED25DF8EA2E1EED8EB /* Pods-Tripod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tripod/Pods-Tripod.debug.xcconfig"; sourceTree = "<group>"; };
+		D1A91425A43AD926E04BF836 /* libPods-TripodTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TripodTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F93FFF9C7EB4FEE8D5E84ED7 /* Pods-Tripod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tripod.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tripod/Pods-Tripod.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +166,7 @@
 				01254EA020E4E026003E0E4B /* AVFoundation.framework in Frameworks */,
 				01254EA120E4E026003E0E4B /* Foundation.framework in Frameworks */,
 				01254EA220E4E026003E0E4B /* CoreFoundation.framework in Frameworks */,
-				86C8D8D2C1C0568F07314540 /* libPods-Tripod.a in Frameworks */,
+				B24F7A5C36843D8D3504C937 /* libPods-Tripod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +190,12 @@
 		017E9ACF207F425E005A9A37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0163176D2143431F00204521 /* libPods-TripodTests.a */,
+				0163176F2143431F00204521 /* libPods-TripodUITests.a */,
+				0163176A2143362A00204521 /* libTripodFrame.a */,
+				01631766214334E000204521 /* libTripodFrame.a */,
+				014FBFDF2143291A006AB876 /* libTripodFrame.a */,
+				014FBFD8214304A8006AB876 /* libTripodFrame.a */,
 				005B97C6210861A1004D1DF7 /* UIKit.framework */,
 				0146BBC220F8819000E27959 /* CoreMotion.framework */,
 				01254EA920E4E093003E0E4B /* CoreGraphics.framework */,
@@ -201,9 +205,9 @@
 				01254E9D20E4E025003E0E4B /* AVFoundation.framework */,
 				01254E9F20E4E025003E0E4B /* CoreFoundation.framework */,
 				01254E9E20E4E025003E0E4B /* Foundation.framework */,
-				D1CA4AB35B9A1AD9FB3CF4C8 /* libPods-Tripod.a */,
-				B2268E5B664974BD1D9FDE32 /* libPods-TripodTests.a */,
-				60D0A8F51F1A69ED55E13002 /* libPods-TripodUITests.a */,
+				D1A91425A43AD926E04BF836 /* libPods-TripodTests.a */,
+				510C5F270ADB7397C9FE96EC /* libPods-TripodUITests.a */,
+				AAC06DEDE83AC614F4028FB0 /* libPods-Tripod.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,7 +220,7 @@
 				01822F601C88089000C90D48 /* TripodUITests */,
 				01822F3A1C88089000C90D48 /* Products */,
 				017E9ACF207F425E005A9A37 /* Frameworks */,
-				DAF0661C4E01C66F92EB9534 /* Pods */,
+				C1ECB225AB084C816CA0FC0F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,10 +237,7 @@
 		01822F3B1C88089000C90D48 /* Tripod */ = {
 			isa = PBXGroup;
 			children = (
-				016317732143A84B00204521 /* NSURLRequest+IgnoreSSL.h */,
-				016317722143A84B00204521 /* NSURLRequest+IgnoreSSL.m */,
 				0185D54C1C8928BA00616B4A /* Singleternclass */,
-				01DF03251C8866EB00A9FA55 /* APICalling */,
 				01DF031C1C883FDB00A9FA55 /* CrashReport */,
 				01DF031D1C883FDB00A9FA55 /* ShaketoReport */,
 				01822F3F1C88089000C90D48 /* AppDelegate.h */,
@@ -381,26 +382,15 @@
 			children = (
 				01DF03221C88430000A9FA55 /* ShaketoReportVC.h */,
 				01DF03231C88430000A9FA55 /* ShaketoReportVC.m */,
-				0185D5501C895A0000616B4A /* EditImageVC.h */,
-				0185D5511C895A0000616B4A /* EditImageVC.m */,
 			);
 			path = ShaketoReport;
 			sourceTree = "<group>";
 		};
-		01DF03251C8866EB00A9FA55 /* APICalling */ = {
+		C1ECB225AB084C816CA0FC0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				01DF03261C88672E00A9FA55 /* WebServiceRequest.h */,
-				01DF03271C88672E00A9FA55 /* WebServiceRequest.m */,
-			);
-			path = APICalling;
-			sourceTree = "<group>";
-		};
-		DAF0661C4E01C66F92EB9534 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E584BE3D957D29D6C7AEB363 /* Pods-Tripod.debug.xcconfig */,
-				2C757166DCF6CE5496526F74 /* Pods-Tripod.release.xcconfig */,
+				C91A38ED25DF8EA2E1EED8EB /* Pods-Tripod.debug.xcconfig */,
+				F93FFF9C7EB4FEE8D5E84ED7 /* Pods-Tripod.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -412,12 +402,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01822F661C88089000C90D48 /* Build configuration list for PBXNativeTarget "Tripod" */;
 			buildPhases = (
-				D8804D59F6A9D97968448ACC /* [CP] Check Pods Manifest.lock */,
+				643071B1480509C95BC97636 /* [CP] Check Pods Manifest.lock */,
 				01822F351C88089000C90D48 /* Sources */,
 				01822F361C88089000C90D48 /* Frameworks */,
 				01822F371C88089000C90D48 /* Resources */,
 				014FBF89213FD568006AB876 /* Embed Frameworks */,
-				0B29B582D8BEE4F81FA11EF1 /* [CP] Embed Pods Frameworks */,
+				A2FEFE7B074972FB59A7E8C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -559,25 +549,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B29B582D8BEE4F81FA11EF1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Tripod/Pods-Tripod-frameworks.sh",
-				"${PODS_ROOT}/../../TripodFramework/TripodFramework.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TripodFramework.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tripod/Pods-Tripod-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8804D59F6A9D97968448ACC /* [CP] Check Pods Manifest.lock */ = {
+		643071B1480509C95BC97636 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -595,6 +567,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A2FEFE7B074972FB59A7E8C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tripod/Pods-Tripod-frameworks.sh",
+				"${PODS_ROOT}/../../TripodFramework/TripodFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TripodFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tripod/Pods-Tripod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -602,12 +592,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				016317742143A84C00204521 /* NSURLRequest+IgnoreSSL.m in Sources */,
+				0163176C2143427D00204521 /* libTripodFrame.a in Sources */,
 				01DF03211C88410A00A9FA55 /* CrashRepotingVC.m in Sources */,
 				0185D54F1C8928D600616B4A /* CommonMethod.m in Sources */,
-				0185D5521C895A0000616B4A /* EditImageVC.m in Sources */,
 				01822F441C88089000C90D48 /* ViewController.m in Sources */,
-				01DF03281C88672E00A9FA55 /* WebServiceRequest.m in Sources */,
 				01822F411C88089000C90D48 /* AppDelegate.m in Sources */,
 				01DF03241C88430000A9FA55 /* ShaketoReportVC.m in Sources */,
 				01822F3E1C88089000C90D48 /* main.m in Sources */,
@@ -708,13 +696,10 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-fembed-bitcode";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos11.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -755,20 +740,17 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fembed-bitcode";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos11.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "armv7s arm64";
 			};
 			name = Release;
 		};
 		01822F671C88089000C90D48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E584BE3D957D29D6C7AEB363 /* Pods-Tripod.debug.xcconfig */;
+			baseConfigurationReference = C91A38ED25DF8EA2E1EED8EB /* Pods-Tripod.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -778,10 +760,7 @@
 				DEVELOPMENT_TEAM = BBLGLJ693Z;
 				ENABLE_BITCODE = NO;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tripod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -792,13 +771,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "armv7s arm64";
 			};
 			name = Debug;
 		};
 		01822F681C88089000C90D48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C757166DCF6CE5496526F74 /* Pods-Tripod.release.xcconfig */;
+			baseConfigurationReference = F93FFF9C7EB4FEE8D5E84ED7 /* Pods-Tripod.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -808,10 +787,7 @@
 				DEVELOPMENT_TEAM = BBLGLJ693Z;
 				ENABLE_BITCODE = NO;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tripod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -822,7 +798,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "armv7s arm64";
 			};
 			name = Release;
 		};

@@ -11,8 +11,10 @@
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,NSURLConnectionDelegate,NSURLSessionDelegate>
+@property(strong,nonatomic)TripodViewController *tripod;
 @property (strong, nonatomic) UIWindow *window;
 @property(weak,nonatomic)UINavigationController *s;
 @property(nonatomic,strong)NSData *imageData;
+
 @end
 

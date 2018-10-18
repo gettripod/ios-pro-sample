@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "CommonMethod.h"
-#import "EditImageVC.h"
 
 @interface ShaketoReportVC : UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
-    EditImageVC *editImageVC;
-    TripodViewController *tripodView;
+    
+    TripodViewController *tri;
 }
--(void)chek;
 @end
