@@ -51,10 +51,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Mohan" => "mohanab@gendevs.com" }
-  # Or just: s.author    = "Mohan"
-  # s.authors            = { "Mohan" => "mohanab@gendevs.com" }
-  # s.social_media_url   = "http://twitter.com/Mohan"
+  s.author             = { "GeneralDevelopers" => "GeneralDevelopers@gmail.com" }
+  # Or just: s.author    = "GeneralDevelopers"
+  # s.authors            = { "GeneralDevelopers" => "GeneralDevelopers@gmail.com" }
+  # s.social_media_url   = ""
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/mohanchandrab/TripodFrame.git", :tag => "0.0.1" }
+  s.source       = { :git => "", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
