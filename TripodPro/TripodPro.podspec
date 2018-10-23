@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "TripodPro","TripodPro//*.{}"
 
-    s.resources =  "TripodFrame/Resources/**/*.{png}"
+    s.resources =  ""
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
