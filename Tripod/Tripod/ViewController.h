@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CrashRepotingVC.h"
 #import "ShaketoReportVC.h"
-#import <TripodFramework/TripodFrame.h>
+#import <TripodPro/TripodFrame.h>
 @interface ViewController : UIViewController
 {
     TripodViewController *tri;

@@ -103,7 +103,6 @@
                 [self.view addSubview:tri.view];
                 [tri.editImageView setImage:image];
                 NSString * str = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
-                NSLog(@"app name %@",str);
                 
             } else {
                 [tri.view removeFromSuperview];

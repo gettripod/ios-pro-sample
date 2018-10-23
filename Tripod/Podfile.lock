@@ -1,16 +1,16 @@
 PODS:
-  - TripodFramework (0.0.1)
+  - TripodPro (0.0.1)
 
 DEPENDENCIES:
-  - TripodFramework (from `../TripodFramework`)
+  - TripodPro (from `../TripodPro`)
 
 EXTERNAL SOURCES:
-  TripodFramework:
-    :path: "../TripodFramework"
+  TripodPro:
+    :path: "../TripodPro"
 
 SPEC CHECKSUMS:
-  TripodFramework: 14144dc9c5f5a36ea366a4626d62b6f653ac9fac
+  TripodPro: 56d2b356eefc1813509d5b6f5686ae56b31f0fdc
 
-PODFILE CHECKSUM: 4601e0c6bb6b1ad71e31b4788711c9d44180e942
+PODFILE CHECKSUM: 51b5ec4a3ded2ba3b90dffbb028d803f4f787561
 
 COCOAPODS: 1.5.3

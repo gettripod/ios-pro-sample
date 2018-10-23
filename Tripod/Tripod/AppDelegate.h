@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <TripodFramework/TripodFrame.h>
+#import <TripodPro/TripodFrame.h>
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,NSURLConnectionDelegate,NSURLSessionDelegate>

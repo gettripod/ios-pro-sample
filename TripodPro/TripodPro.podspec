@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint TripodFramework.podspec' to ensure this is a
+#  Be sure to run `pod spec lint TripodPro.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "TripodFramework"
+  s.name         = "TripodPro"
   s.version      = "0.0.1"
   s.summary      = "Use for testing application in very easy way to send crashes and images."
 
@@ -51,10 +51,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "GeneralDevelopers" => "GeneralDevelopers@gmail.com" }
-  # Or just: s.author    = "GeneralDevelopers"
-  # s.authors            = { "GeneralDevelopers" => "GeneralDevelopers@gmail.com" }
-  # s.social_media_url   = ""
+  s.author             = { "Mohan" => "mohanab@gendevs.com" }
+  # Or just: s.author    = "Mohan"
+  # s.authors            = { "Mohan" => "mohanab@gendevs.com" }
+  # s.social_media_url   = "http://twitter.com/Mohan"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/mohanchandrab/TripodFrame.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,9 +89,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TripodFramework","TripodFramework//*.{}"
+  s.source_files  = "TripodPro","TripodPro//*.{}"
 
-    #s.resources =  ""
+    s.resources =  "TripodFrame/Resources/**/*.{png}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-    s.vendored_frameworks = 'TripodFramework.framework'
+    s.vendored_frameworks = 'TripodPro.framework'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

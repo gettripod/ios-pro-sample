@@ -16,7 +16,6 @@
 @interface ViewController ()
 {
     NSData *imgData;
-    //SRScreenRecorder *src;
     AppDelegate *appDel;
 }
 @end

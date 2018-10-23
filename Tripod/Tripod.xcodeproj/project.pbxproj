@@ -574,11 +574,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tripod/Pods-Tripod-frameworks.sh",
-				"${PODS_ROOT}/../../TripodFramework/TripodFramework.framework",
+				"${PODS_ROOT}/../../TripodPro/TripodPro.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TripodFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TripodPro.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -4,7 +4,7 @@
 target 'Tripod' do
   
      
-     pod 'TripodFramework', :path => '../TripodFramework'
+     pod 'TripodPro', :path => '../TripodPro'
 
 
 

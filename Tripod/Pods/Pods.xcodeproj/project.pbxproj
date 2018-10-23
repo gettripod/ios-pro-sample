@@ -13,13 +13,13 @@
 /* Begin PBXFileReference section */
 		1243FA7CCAB543D105C3D7D40B995FB0 /* Pods-Tripod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tripod.release.xcconfig"; sourceTree = "<group>"; };
 		3ACDC943462686F055A4DB45640C1761 /* Pods-Tripod-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tripod-resources.sh"; sourceTree = "<group>"; };
-		3FAE454C77490876BC84592F645F0DE8 /* TripodFramework.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = TripodFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		432AE473BA3AA8FCB97ECE96618894E9 /* Pods-Tripod-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tripod-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5AE94A1FFBB839887D69B5EA1635ECAC /* TripodFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TripodFramework.framework; sourceTree = "<group>"; };
 		67CFC77363ADDF501AE7FA2DCCED1325 /* Pods-Tripod-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tripod-acknowledgements.plist"; sourceTree = "<group>"; };
+		8E595E205A696D16E5396168A4FE03B5 /* TripodPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TripodPro.framework; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96B5685EFBCDEAA8765266C2BCD86627 /* libPods-Tripod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Tripod.a"; path = "libPods-Tripod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE320E7C65210FE913C0B6D3A4200CFA /* Pods-Tripod-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tripod-frameworks.sh"; sourceTree = "<group>"; };
+		BB5CA23661901EC5E97E7AF9C17F5B35 /* TripodPro.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = TripodPro.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C034EB89ADED59586F2796AB8FD16E70 /* Pods-Tripod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tripod-dummy.m"; sourceTree = "<group>"; };
 		D5A9D0C3043175B8C0640E5BE08855A8 /* Pods-Tripod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tripod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,19 +35,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BA17C63BBB89FE5BADCA507AD1F4DDD /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				84B59C8693B67F5E308C071CA64F1156 /* TripodFramework */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19A5B7D5F0176C244EBE3F75D9AF11D2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				770D96387CD42DBB02E0934765EA049C /* TripodPro */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		253B43078609B1D651E0518BD302B11F /* Pods-Tripod */ = {
@@ -63,6 +63,16 @@
 			);
 			name = "Pods-Tripod";
 			path = "Target Support Files/Pods-Tripod";
+			sourceTree = "<group>";
+		};
+		770D96387CD42DBB02E0934765EA049C /* TripodPro */ = {
+			isa = PBXGroup;
+			children = (
+				AF3DC402C4EC6CB1530C1342AA31C264 /* Frameworks */,
+				813B46189A5E7D8AC18B12363EACD0E0 /* Pod */,
+			);
+			name = TripodPro;
+			path = ../../TripodPro;
 			sourceTree = "<group>";
 		};
 		7AF7F96A1AC98CB0CAD06BD9E235CDAE /* Targets Support Files */ = {
@@ -85,37 +95,27 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0BA17C63BBB89FE5BADCA507AD1F4DDD /* Development Pods */,
+				19A5B7D5F0176C244EBE3F75D9AF11D2 /* Development Pods */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
 				7CD3A1D0656F3A59C87B21D355914613 /* Products */,
 				7AF7F96A1AC98CB0CAD06BD9E235CDAE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84B59C8693B67F5E308C071CA64F1156 /* TripodFramework */ = {
+		813B46189A5E7D8AC18B12363EACD0E0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				DFF01FC02D749758B221F3AC94EB5E6E /* Frameworks */,
-				FDF9582B6E06EDC2B5CA00E790BC4698 /* Pod */,
-			);
-			name = TripodFramework;
-			path = ../../TripodFramework;
-			sourceTree = "<group>";
-		};
-		DFF01FC02D749758B221F3AC94EB5E6E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5AE94A1FFBB839887D69B5EA1635ECAC /* TripodFramework.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FDF9582B6E06EDC2B5CA00E790BC4698 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3FAE454C77490876BC84592F645F0DE8 /* TripodFramework.podspec */,
+				BB5CA23661901EC5E97E7AF9C17F5B35 /* TripodPro.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		AF3DC402C4EC6CB1530C1342AA31C264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E595E205A696D16E5396168A4FE03B5 /* TripodPro.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
