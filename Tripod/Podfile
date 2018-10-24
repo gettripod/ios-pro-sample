@@ -4,8 +4,8 @@
 target 'Tripod' do
   
      
-     pod 'TripodPro', :path => '../TripodPro'
-
+     # pod 'TripodPro', :path => '../TripodPro'
+pod 'TripodPro',:git => "https://github.com/gettripod/ios-pro-framework.git", :tag => "0.0.1"
 
 
 end

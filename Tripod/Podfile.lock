@@ -2,15 +2,21 @@ PODS:
   - TripodPro (0.0.1)
 
 DEPENDENCIES:
-  - TripodPro (from `../TripodPro`)
+  - TripodPro (from `https://github.com/gettripod/ios-pro-framework.git`, tag `0.0.1`)
 
 EXTERNAL SOURCES:
   TripodPro:
-    :path: "../TripodPro"
+    :git: https://github.com/gettripod/ios-pro-framework.git
+    :tag: 0.0.1
+
+CHECKOUT OPTIONS:
+  TripodPro:
+    :git: https://github.com/gettripod/ios-pro-framework.git
+    :tag: 0.0.1
 
 SPEC CHECKSUMS:
-  TripodPro: 56d2b356eefc1813509d5b6f5686ae56b31f0fdc
+  TripodPro: 4074d5722805035178d019b701217b6655acb943
 
-PODFILE CHECKSUM: 51b5ec4a3ded2ba3b90dffbb028d803f4f787561
+PODFILE CHECKSUM: da55c0dfca56a4a079482d08cf9d771f0c180bfc
 
 COCOAPODS: 1.5.3

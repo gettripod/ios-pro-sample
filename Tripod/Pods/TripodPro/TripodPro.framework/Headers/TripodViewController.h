@@ -28,7 +28,7 @@ static NSMutableString *URL = @"https://demo.gendevs.com/tripod-backend-develop/
 @property BOOL isPickerSeleted;
 
 -(void)createCrash:(NSException *)exception ;
--(void)sendEditedImageToServer;
+-(void)sendEditedImageToServer:(NSData *)imgeData;
 - (IBAction)ShowPicker:(id)sender;
 -(void)setupTripodenvironmentKey :(NSString *)key appVersion:(NSString *)version appVersionCode :(NSString *)code packageName :(NSString *)packageName appName:(NSString *)appName secretKey:(NSString *)secretKey;
 @end

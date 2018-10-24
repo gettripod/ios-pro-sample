@@ -1,1 +1,1 @@
-../../../../../../TripodPro/TripodPro.framework/Headers/TripodFrame.h
+../../../../TripodPro/TripodPro.framework/Headers/TripodFrame.h

@@ -1,1 +1,1 @@
-../../../../../../TripodPro/TripodPro.framework/Headers/TripodViewController.h
+../../../../TripodPro/TripodPro.framework/Headers/TripodViewController.h

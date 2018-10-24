@@ -6,17 +6,17 @@
   "homepage": "https://demo.gendevs.com",
   "license": "MIT",
   "authors": {
-    "Mohan": "mohanab@gendevs.com"
+    "Generaldevelopers": "Generaldevelopers@gmail.com.com"
   },
   "source": {
-    "git": "https://github.com/mohanchandrab/TripodFrame.git",
+    "git": "https://github.com/gettripod/ios-pro-framework.git",
     "tag": "0.0.1"
   },
   "source_files": [
     "TripodPro",
     "TripodPro//*.{}"
   ],
-  "resources": "TripodFrame/Resources/**/*.{png}",
+  "resources": "",
   "exclude_files": "Classes/Exclude",
   "vendored_frameworks": "TripodPro.framework",
   "platforms": {
